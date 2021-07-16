@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  fail2ban:
+    container_name: fail2ban
+    build: .
+    ports:
+      - 8080:80
+    privileged: true
